@@ -6,6 +6,7 @@ license = "MIT"
 description = "VYRON IDE - a graphite, Rust-rendered browser IDE"
 
 [dependencies]
+# WASM/GitHub Pages build: avoid native C parser dependencies.
 eframe = { version = "0.37", default-features = false, features = ["glow", "persistence", "default_fonts", "x11", "wayland"] }
 egui = "0.37"
 egui_extras = "0.37"
@@ -14,8 +15,6 @@ serde_json = "1"
 sha2 = "0.10"
 hex = "0.4"
 regex = "1"
-tree-sitter = "0.24"
-tree-sitter-rust = "0.24.2"
 chrono = { version = "0.4", features = ["serde", "wasmbind"] }
 thiserror = "2"
 log = "0.4"
