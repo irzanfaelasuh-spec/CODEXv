@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17191D">
+  <meta name="description" content="VYRON IDE — a Rust-rendered, browser-first developer workspace.">
+  <link rel="icon" type="image/svg+xml" href="./assets/vyron-mark.svg">
+  <title>VYRON IDE</title>
+</head>
+<body style="margin:0;background:#17191D;overflow:hidden">
+  <canvas id="the_canvas_id" style="width:100vw;height:100vh;display:block;touch-action:none"></canvas>
+  <link data-trunk rel="rust" data-wasm-opt="s" data-bin="vyron-ide">
+  <link data-trunk rel="copy-dir" href="assets">
+</body>
+</html>
